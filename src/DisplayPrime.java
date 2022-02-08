@@ -12,13 +12,15 @@ public class DisplayPrime {
         }
     }
 
-    private static boolean isPrimeNumber(int i) {
-        if(i<2){
+
+
+    private static boolean isPrimeNumber(int x) {
+        if(x<2){
             return false;
         }
         else {
-            for (int j = 2; j < Math.sqrt(i); j++) {
-                if(i%j == 0){
+            for (int i = 2; i <= Math.sqrt(x); i++) {
+                if(x%i == 0){
                     return false;
                 }
             }
